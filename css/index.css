@@ -155,3 +155,44 @@ h1{
         margin-top:-65px;
         margin-bottom:100px;
     }
+
+    #secondarybutton{
+        background: #E9AC92 0% 0% no-repeat padding-box;
+        border: 1px solid #E9AC92;
+        border-radius:48px; 
+        font-family:avenir;
+        text-align: center;
+        letter-spacing:3px;
+        color:#ffffff;
+        text-transform:uppercase;
+        font-size:20px;
+        font-weight:book;
+        padding:7px 18px;
+    }
+
+    .heroimage{
+        width:400px;
+    }
+
+    .contentgrid{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows:auto;
+        grid-template-areas:
+        'text image';
+    }
+
+    .text{
+        display:grid;
+        grid-area:text;
+        grid-column-start:1;
+        grid-column-end:2;
+
+    }
+
+    .heromage{
+        display:grid;
+        grid-area:image;
+        grid-column-start:2;
+        grid-column-end:3;
+    }
